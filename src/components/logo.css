@@ -1,0 +1,18 @@
+.logodiv{
+    background-color: #dbff00;
+    padding: 5px;
+    border-radius: 2px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.logotxt{
+    color: black;
+    background-color: transparent;
+    position: absolute;
+    top: 2px;
+    left: 8px ;
+    font-size: medium;
+    
+}

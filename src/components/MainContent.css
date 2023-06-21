@@ -1,0 +1,15 @@
+.maincontent{
+    width: 80vw;
+    margin: 30px auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.postdiv{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

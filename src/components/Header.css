@@ -1,0 +1,36 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+    margin: 30px;
+    margin-left: 90px;
+    color: #7d7d7d;
+    padding: 5px;
+}
+
+.mainhead{
+    display: flex;
+    align-items: center;
+    gap: 29px;
+}
+.icons {
+    display: flex;
+    gap: 9px;
+}
+.icons i, .icons i {
+    border-radius: 50%;
+    height: 30px;
+    text-align: center;;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #fff !important;
+}
+
+.icons :hover{ 
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    transition: 0.2s;
+}

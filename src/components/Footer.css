@@ -1,0 +1,17 @@
+div.footer{
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    justify-content: space-around;
+    margin-bottom: 60px  !important ;
+    margin: 10px;
+}
+
+.footerlinks{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: #7d7d7d;
+    font-weight: lighter;
+}

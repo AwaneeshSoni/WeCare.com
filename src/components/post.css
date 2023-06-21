@@ -1,0 +1,31 @@
+.post:hover{
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    transition: 0.3s;
+
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    margin: 20px;
+    width: 200px;
+    background-color: #fff !important;
+    border-radius: 6px;
+    color: #7d7d7d;
+}
+.post img, .post h3{
+    background-color: #fff !important;
+    margin: 0px;
+    height: 100%;
+    display: flex;
+}
+.post img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.imgdiv{
+    border-radius: 5px;
+}
