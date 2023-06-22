@@ -1,0 +1,14 @@
+.aboutus{
+    width: 90vw;
+    margin: 10px ;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.aboutusp{
+    padding: 50px;
+    border-radius: 5px;
+
+}

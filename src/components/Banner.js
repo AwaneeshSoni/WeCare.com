@@ -4,12 +4,10 @@ import "./banner.css"
 export default function Banner(){
     return(
         <div className="banner" >
-            <h1>
-                Just Beacuse You Care For Someone
-            </h1>
-            <h1>We are On SALE</h1>
-            <h1>And</h1>
-            <h1>Everything is FREE!</h1>
+            <h3>Just Beacuse You Care For Someone</h3><h3>We are On SALE
+                </h3>
+            <h3>And</h3>
+            <h3>Everything is FREE!</h3>
         </div>
     )
 }

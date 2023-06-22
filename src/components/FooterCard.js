@@ -5,7 +5,9 @@ export default function FooterCard(){
     return(
         <div className="footercard">
             <div className="footerlogo">
-                <Logo />
+               <div className="footlog"  >
+               <Logo />
+                </div>
                 <h1>WeCare.com</h1>
             </div>
             <p>We are happy to deliver our Product in your Haiecieieiviiiojehoehoefppiness. Buy or products</p>

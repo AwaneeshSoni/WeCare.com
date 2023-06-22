@@ -1,15 +1,19 @@
 import './App.css';
 import React from 'react';
-import Header from './components/Header';
-import MainContent from './components/MainContent.js';
-import Footer from './components/Footer';
+import { Routes,Route } from 'react-router-dom';
+import HomePage from './components/HomePage';
+import DetailPost from './components/DetailPost';
+import AboutUs from './components/AboutUs';
+
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <MainContent />
-      <Footer />
+      <Routes>
+        <Route exact path='/' element={<HomePage /> } />
+        <Route path='/DetailPost' element={<DetailPost />} />
+        <Route path='/AboutUs' element={<AboutUs />}/>
+      </Routes>
     </div>
   );
 }

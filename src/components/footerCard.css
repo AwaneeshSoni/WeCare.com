@@ -1,5 +1,6 @@
 p{
     background-color: white !important ;
+    margin: 0;
 }
 
 .footercard {
@@ -13,8 +14,16 @@ p{
     display: flex;
     gap: 9px;
     background-color: transparent;
+    border-radius: 3px;
 }
 .footerlogo h1{
     background-color: transparent;
+    margin: 2px;
 
+}
+.footlog{
+    position: relative;
+    color: white !important;
+    background-color: transparent;
+    background: none;
 }

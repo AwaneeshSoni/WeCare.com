@@ -1,0 +1,39 @@
+.detailp{
+    width: 90vw;
+    margin: 3px auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+.maindiv{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff !important;
+    gap: 20px;
+    padding: 20px;
+}
+
+#imgdiv{
+    padding: 30px;
+    color: white;
+    width: 50vw;
+    border-radius: 8px;
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.feeditem {
+    background-color: #d5d5d5;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 10px;
+    max-width: 18rem;
+}
+.feeditem p{
+    background-color: transparent;
+}
