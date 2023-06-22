@@ -16,6 +16,9 @@
 }
 .mainhead h3{
     background-color: transparent;
+    color: #7d7d7d;
+    text-decoration: unset;
+    cursor: pointer;
 }
 .icons {
     display: flex;

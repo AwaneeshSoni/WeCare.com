@@ -11,8 +11,8 @@
     color: black;
     background-color: transparent;
     position: absolute;
-    top: 2px;
-    left: 8px ;
+    top: 2px  !important;
+    left: 8px !important;
     font-size: medium;
     
 }

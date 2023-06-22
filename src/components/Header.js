@@ -9,7 +9,7 @@ function Header(Props){
         <div className="mainhead">
             <Logo />
             <Link to={'/'} >
-            <h3>Home</h3>
+            <h3  >Home</h3>
                 </Link>
         </div>
         <div className="icons" > 

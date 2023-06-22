@@ -1,11 +1,11 @@
 import React from "react";
-import "./AboutUs.css"
+import "./privcy.css"
 
 
-export default function AboutUs(){
+export default function ContactUs(){
     return(
         <div className="aboutus">
-            <h2>About Us </h2>
+            <h2>Contact Us</h2>
             <p className="aboutusp" >
             Your brand story. Tell shoppers the origin story of your business and why you started it. For the most impact, make it memorable and personal, so customers relate and connect with your brand.
 Who you serve. What do you offer and who is it for? Help shoppers see the value of your product or service by sharing how it solves problems or needs.
