@@ -1,27 +1,17 @@
 import React from "react";
 import "./MainContent.css"
 import Banner from "./Banner";
-import Post from "./Post";
-import { Link } from "react-router-dom";
+import Posts from "./Posts";
+import Data from "../data.json"
+
 
 export default function MainContent(){
+
     return(
         <div className="maincontent" >
             <Banner />
             <div className="postdiv" >
-               <Link to='/DetailPost' ><Post /></Link>
-               <Link to='/DetailPost' ><Post /></Link>
-               <Link to='/DetailPost' ><Post /></Link>
-               <Link to='/DetailPost' ><Post /></Link>
-               <Link to='/DetailPost' ><Post /></Link>
-               <Link to='/DetailPost' ><Post /></Link>
-               <Link to='/DetailPost' ><Post /></Link>
-               <Link to='/DetailPost' ><Post /></Link>
-               <Link to='/DetailPost' ><Post /></Link>
-               <Link to='/DetailPost' ><Post /></Link>
-               <Link to='/DetailPost' ><Post /></Link>
-               <Link to='/DetailPost' ><Post /></Link>
-               <Link to='/DetailPost' ><Post /></Link>
+                <Posts data={Data} />
             </div>
         </div>
     )

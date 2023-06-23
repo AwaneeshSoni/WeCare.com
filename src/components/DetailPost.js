@@ -1,43 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
 import "./detailpost.css"
-import Post from "./Post";
-
+import Posts from "./Posts";
+import { useLocation, useParams } from "react-router-dom";
+import Data from "../data.json"
 
 
 export default function DetailPost(){
+
+const [to,setTo] = React.useState("");
+const [from,setFrom] = React.useState("");
+
+    const {id} = useParams();
+    const data =Data.find(p => p.id == id);
+    function HandleChange1(e){
+        setFrom(e.target.value)
+    }
+    function HandleChange2(e){
+        setTo(e.target.value)
+    }
+    const [message,setMessage] =useState("");
+    function HandleClick(){
+        setMessage(`Hey ${to}, ${from} is wishing you a ${data.main}`);
+        setTo("")
+        setFrom("")
+    }
     return(
         <div>
             <div className="detailp" >
                 <div className="maindiv" >
                     <div>
-                        <img id="imgdiv" src="https://th.bing.com/th/id/OIP.2lG_Ek2oS8SB7p1gTuB6HgHaEK?pid=ImgDet&rs=1" />
+                        <img id="imgdiv" src={data.url} />
                     </div>
                     <div className="content" >
-                        <h3>Wish someone a Happy Borthday</h3>
+                        <h3>{data.title}</h3>
                         <h4>What is Your Name ?</h4>
-                        <input type="text" ></input>
-                        <h4>Who's Berthday is this</h4>
-                        <input type="text" ></input>
+                        <input value={from} type="text" onChange={HandleChange1} placeholder="Enter Name"></input>
+                        <h4>Deliver To</h4>
+                        <input value={to} 
+                        onChange={HandleChange2} type="text" placeholder="Enter Name" ></input>
 
-                        <button type="submit" >Submit
+                        <button onClick={HandleClick} type="submit" >Submit
                         </button>
-                        <div>
-                            Share link will come here
+                        <div className="Okshare" >
+                            {message}
                         </div>
                     </div>
                 </div>
                 <h3>Browse our other products</h3>
                 <div className="otherproducts" >
-                    <Post />
-                    <Post />
-                    <Post />
-                    <Post />
-                    <Post />
-                    <Post />
-                    <Post />
-                    <Post />
-                    <Post />
-                    <Post />
+                    <Posts data={Data} />
                 </div>
             </div>
         </div>

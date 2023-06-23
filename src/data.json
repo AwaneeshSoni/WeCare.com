@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Wish a Happy Birthday",
+        "url": "https://img.freepik.com/free-psd/balloon-birthday-greeting-template-psd-pink-gold-tone_53876-138582.jpg?w=2000",
+        "main" :"Happy birthday ",
+        "id":"1"
+    },
+    {
+        "title": "Wish a Happy New Year",
+        "url": "https://img.freepik.com/free-photo/new-year-background_24972-1414.jpg?size=626&ext=jpg&ga=GA1.2.1299455672.1687478199&semt=ais",
+        "main" :"Happy New Year ",
+        "id":"2"
+    },
+    {
+        "title": "Wish a Happy Navratri",
+        "url": "https://img.freepik.com/free-photo/beautifully-decorated-hindu-lord-balarama-idol-during-rath-yatra-festival-ai-generative_123827-23666.jpg?size=626&ext=jpg&ga=GA1.2.1299455672.1687478199&semt=ais",
+        "main" :"Happy Navratri ",
+        "id":"3"
+    },
+    {
+        "title": "Wish a Happy Diwali",
+        "url": "https://img.freepik.com/free-photo/festival-lights-candle-symbol_23-2149767934.jpg?size=626&ext=jpg&ga=GA1.2.1299455672.1687478199&semt=ais",
+        "main" :"Happy Diwali ",
+        "id":"4"
+    },
+    {
+        "title": "Wish a Happy Holi",
+        "url": "https://img.freepik.com/free-photo/hands-rose-green-colors-bright-dry-colours_23-2148016485.jpg?size=626&ext=jpg&ga=GA1.2.1299455672.1687478199&semt=sph",
+        "main" :"Happy Holi ",
+        "id":"5"
+    },
+    {
+        "title": "Wish a Happy Mother's Day",
+        "url": "https://img.freepik.com/free-photo/happy-mothers-day-inscription-with-purple-flowers_23-2148067883.jpg?size=626&ext=jpg&ga=GA1.2.1299455672.1687478199&semt=ais",
+        "main" :"Happy Mother's Day ",
+        "id":"6"
+    },
+    {
+        "title": "Wish a Happy Father's Day",
+        "url": "https://img.freepik.com/free-photo/composition-fathers-day_23-2147806857.jpg?size=626&ext=jpg&ga=GA1.1.1299455672.1687478199&semt=ais",
+        "main" :"Happy Father's Day ",
+        "id":"7"
+    }
+]

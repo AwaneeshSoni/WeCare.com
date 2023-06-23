@@ -1,16 +1,18 @@
 import React from "react";
 import "../components/post.css"
+import { Link } from "react-router-dom";
 
-export default function Post(){
+export default function Post(props){
     return(
-        <div className="post">
+        <div>
+            <div className="post">
             <div className="imgdiv" >
-                <img src="https://www.investopedia.com/thmb/UriZeen7mXmPPxa-Aa3bpzr3Qs0=/6250x4167/filters:no_upscale():max_bytes(150000):strip_icc()/TheHistoryofMoney-3da5ee3a5ecf45bb8c3fcdd0b42f6acd.jpg" />
+                <img src={props.data.url} />
             </div>
             <div className="titlediv" >
-                <h3>Ab title aa hi gya hknihibikiiguygiuhiuai</h3>
-
+                <h3>{props.data.title}</h3>
             </div>
+        </div>
         </div>
     )
 }

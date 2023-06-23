@@ -34,6 +34,9 @@
     flex-direction: column;
     gap: 3px;
     max-width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
     flex-wrap: wrap;
 }
 
@@ -53,4 +56,15 @@
     overflow: hidden;
     justify-content: center;
     flex-wrap: wrap;
+}
+input{
+    border: none;
+    height: 22px;
+    margin-top: 0;;
+    margin-bottom: 10px;
+    background-color: #d7d7d7;
+}
+.okshare{
+    font-weight: 200;
+    color: black !important ;
 }
