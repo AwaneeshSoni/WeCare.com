@@ -1,0 +1,9 @@
+.Shareb{
+    width: 90vw;
+    margin: 3px auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    background-color: #fff !important;
+}

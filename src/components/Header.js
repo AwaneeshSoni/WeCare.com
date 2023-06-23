@@ -13,8 +13,12 @@ function Header(Props){
                 </Link>
         </div>
         <div className="icons" > 
-            <i class="fi fi-rr-share"></i>
-            <i class="fi fi-rr-user"></i>
+            <Link to={'/ShareUs'} > 
+            <i  class="fi fi-rr-share"></i>
+            </Link>
+            <Link to={'/Profile'} >
+            <i  className="iconss " class="fi fi-rr-user"></i>
+            </Link>
         </div>
         </div>
     )

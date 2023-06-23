@@ -64,7 +64,38 @@ input{
     margin-bottom: 10px;
     background-color: #d7d7d7;
 }
-.okshare{
+.Okshare{
     font-weight: 200;
+    display: flex !important;
+    flex-direction: row;
+    background-color: #d7d7d7 !important;
+    border-radius: 5px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     color: black !important ;
+    flex-wrap: wrap;
+    max-width: 70vw;
+}
+.sharemessage{
+    background-color: white !important;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: fit-content;
+    width: 40%;
+    align-self: center;
+    font-family: sans-serif;
+    border-radius: 5px;
+    overflow-x: scroll;
+}
+.sharebutton{
+    padding: 20px;
+    padding-top: 40px;
+    border-radius: 5px;
+    padding-bottom: 40px;
+    overflow-wrap: normal;
+    height: fit-content;
+    width: 40%;
 }

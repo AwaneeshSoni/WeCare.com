@@ -34,10 +34,13 @@
     align-items: center;
     padding: 5px;
     background-color: #fff !important;
+    border-bottom: 2px solid transparent;
+    border-right: 2px solid transparent;
 }
 
-.icons :hover{ 
+.icons i:hover{ 
     border-bottom: 2px solid black;
     border-right: 2px solid black;
     transition: 0.2s;
+    border-radius: 50%;
 }

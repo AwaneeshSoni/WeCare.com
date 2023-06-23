@@ -6,6 +6,10 @@
     flex-direction: column;
     max-width: 100%;
     padding: 30px;
+    background-color: #fff;
+    align-items: center;
+    border-radius: 5px;
+    align-self: center;
 }
 
 .aboutusp{
