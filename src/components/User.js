@@ -1,11 +1,11 @@
 import React from "react";
-
+import "./MainContent.css"
 
 export default function User(){
     return(
-        <div>
+        <div className="maincontent maindiv" >
             <h3>
-                Page Uder construction
+                Page Under construction
             </h3>
         </div>
     )

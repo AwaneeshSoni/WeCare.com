@@ -10,7 +10,7 @@ export default function FooterCard(){
                 </div>
                 <h1>WeCare.com</h1>
             </div>
-            <p>We are happy to deliver our Product in your Haiecieieiviiiojehoehoefppiness. Buy or products</p>
+            <p>We are happy to deliver our Product in your Happiness. Buy our products</p>
         </div>
     )
 }

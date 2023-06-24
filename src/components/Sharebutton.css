@@ -1,5 +1,6 @@
 .Shareb{
     width: 90vw;
+    max-width: initial;
     margin: 3px auto;
     height: fit-content;
     display: flex;

@@ -6,17 +6,17 @@ import { Link } from "react-router-dom";
 function Header(Props){
     return(
         <div className="header">
-        <div className="mainhead">
+        <div  className="mainhead">
             <Logo />
-            <Link to={'/'} >
+            <Link  style={{ textDecoration: 'none' }} to={'/'} >
             <h3  >Home</h3>
                 </Link>
         </div>
         <div className="icons" > 
-            <Link to={'/ShareUs'} > 
+            <Link style={{ textDecoration: 'none' }} to={'/ShareUs'} > 
             <i class="  fi fi-rr-share"></i>
             </Link>
-            <Link to={'/Profile'} >
+            <Link style={{ textDecoration: 'none' }} to={'/Profile'} >
             <i class="fi fi-rr-user"></i>
             </Link>
         </div>

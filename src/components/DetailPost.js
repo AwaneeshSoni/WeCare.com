@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./detailpost.css"
 import Posts from "./Posts";
 import {  useParams } from "react-router-dom";
@@ -14,6 +14,10 @@ const [from,setFrom] = React.useState("");
 
     const [choose,setChoose] = useState(false);
     const {id} = useParams();
+    useEffect(()=>{
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    },[id,[]])
+
     const data =Data.find(p => p.id === id);
     function HandleChange1(e){
         setFrom(e.target.value)
@@ -77,7 +81,7 @@ const [from,setFrom] = React.useState("");
                 </div>
                 <h3>Browse our other products</h3>
                 <div className="otherproducts" >
-                    <Posts data={Data} />
+                    <Posts  data={Data} />
                 </div>
             </div>
         </div>

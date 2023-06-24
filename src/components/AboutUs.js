@@ -1,10 +1,9 @@
 import React from "react";
-import "./AboutUs.css"
-
+import "./MainContent.css"
 
 export default function AboutUs(){
     return(
-        <div className="aboutus">
+        <div className="maincontent maindiv">
             <h2>About Us </h2>
             <p className="aboutusp" >
             Your brand story. Tell shoppers the origin story of your business and why you started it. For the most impact, make it memorable and personal, so customers relate and connect with your brand.

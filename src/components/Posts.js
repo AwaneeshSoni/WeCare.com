@@ -5,7 +5,7 @@ import "./MainContent.css"
 
 export default function Posts(props){
     const data = (props.data || props.data).map((element) =>
-            <Link to={`/DetailPost/${element.id}`} >
+            <Link style={{ textDecoration: 'none' }} to={`/DetailPost/${element.id}`} >
          <Post data={element} />
              </Link>)
 
