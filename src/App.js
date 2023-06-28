@@ -12,6 +12,7 @@ import Disclaimer from './components/Disclaimer'
 import ContactUs from './components/Contact';
 import ShareUs from './components/ShareUs';
 import User from './components/User';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
         <Route exact path='/ContactUs' element={<ContactUs />} />
       </Routes>
       <Footer />
+      <Analytics />
     </div>
   );
 }
