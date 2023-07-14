@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+#WeCare.com 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is my own idea. I did everything from scratch.
+So I started with the UI for the site.
+I went to Google, saw some UIs, and did not like any. So, I went to Figma and created one.
 
-## Available Scripts
+Now for the React part, let's keep it organized.
 
-In the project directory, you can run:
+Here are the five parts of it:
 
-### `npm start`
+1. Reusable Components
+2. Displaying the data
+3. Taking input
+4. Sharing messages on WhatsApp
+5. Routing
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Let's see each of them one by one.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Reusable Components:
 
-### `npm test`
+So there are three main reusable components.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+One is the Logo of the site(green block with WS written in it),
+second one is the Post(Blocks with images which you can) ,
+and
+The third one is DetailedPost (posts open their detailed version with input property).
 
-### `npm run build`
+I created each of these components by their names, and they were imported where needed.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Displaying the data:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+I stored the data in a data.json file in an array of objects.
+Then, the Javascript map() function displayed data using props for each "POST."
+After clicking the post, I used the "DetailedPost" component to show the data again using props.
+But this time, I used useParams() to know which object to pass as a prop. I used this method because each POST routes to a different URL according to the prop passed to it. I used Id in each object for the difference.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+3. Taking input:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Yes, I used useState() for storing the data.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Sharing messages on WhatsApp:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+I used conditional rendering for share on WhatsApp button.
+If the name given is empty, you will not see the share button.
+After you click submit, a preview of your message and a share button is displayed.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+For sending the message on WhatsApp, I used the react-share library.
+I know this is not common.
+I had to learn it on my own.
 
-## Learn More
+Then I passed the message to Share WhatsApp button.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. Routing:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+I am not changing the header and footer components for routing, so only the components in between them are changed along with the URL.
 
-### Code Splitting
+For general pages like AboutUs and Privacy policy, it's simple routing.
+But for each DetailedPost component, I used Dynamic Routing.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Yes, :id is the savior here.
 
-### Analyzing the Bundle Size
+Each Post links to a route with an endpoint having of id of Data.json in place of :id in URL.
+Then, using useParams(), I matched which object to pass to DetailedPost.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+And at the end, I used useEffect() to scroll the page to the top every time I clicked on an element or input something.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Finally, I deployed it on @vercel
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You can see it here: https://lnkd.in/d9pnwZaA
